@@ -3,9 +3,9 @@ package obinary_test
 import (
 	"bytes"
 	"fmt"
-	"gopkg.in/istreamdata/orientgo.v2"
-	"gopkg.in/istreamdata/orientgo.v2/obinary"
-	"gopkg.in/istreamdata/orientgo.v2/obinary/rw"
+	"github.com/lanzay/orientgo"
+	"github.com/lanzay/orientgo/obinary"
+	"github.com/lanzay/orientgo/obinary/rw"
 	"path/filepath"
 	"reflect"
 	"runtime"

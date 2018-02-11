@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"gopkg.in/istreamdata/orientgo.v2"
-	_ "gopkg.in/istreamdata/orientgo.v2/obinary"
+	"github.com/lanzay/orientgo"
+	_ "github.com/lanzay/orientgo/obinary"
 	"strconv"
 )
 

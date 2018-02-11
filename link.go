@@ -3,7 +3,7 @@ package orient
 import (
 	"fmt"
 	"github.com/nu7hatch/gouuid"
-	"gopkg.in/istreamdata/orientgo.v2/obinary/rw"
+	"github.com/lanzay/orientgo/obinary/rw"
 	"io"
 )
 
@@ -36,6 +36,14 @@ type RidBag struct {
 func (bag *RidBag) SetOwner(doc *Document) {
 	bag.owner = doc
 }
+func (bag *RidBag)GetEmbededLinks()([]OIdentifiable){
+	links := []OIdentifiable{}
+	if (!bag.IsRemote()){
+			links = bag.delegate.(*embeddedRidBag).links
+		}
+	return links
+}
+
 func (bag *RidBag) FromStream(r io.Reader) error {
 	br := rw.NewReader(r)
 	first := br.ReadByte()

@@ -2,8 +2,8 @@ package obinary
 
 import (
 	"fmt"
-	"gopkg.in/istreamdata/orientgo.v2"
-	"gopkg.in/istreamdata/orientgo.v2/obinary/rw"
+	"github.com/lanzay/orientgo"
+	"github.com/lanzay/orientgo/obinary/rw"
 )
 
 func (db *Database) serializer() orient.RecordSerializer {

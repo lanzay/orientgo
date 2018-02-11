@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/istreamdata/orientgo.v2"
-	"gopkg.in/istreamdata/orientgo.v2/obinary/rw"
+	"github.com/lanzay/orientgo"
+	"github.com/lanzay/orientgo/obinary/rw"
 )
 
 func init() {

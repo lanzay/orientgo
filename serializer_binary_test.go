@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/istreamdata/orientgo.v2/obinary/rw"
+	"github.com/lanzay/orientgo/obinary/rw"
 )
 
 func TestDeserializeRecordData(t *testing.T) {
